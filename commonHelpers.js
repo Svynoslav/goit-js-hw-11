@@ -1,7 +1,7 @@
 import{S as u,i as d}from"./assets/vendor-8c59ed88.js";(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const a of t.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&o(a)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();async function h(i,r){const s=await fetch(`${i}?${r}`);if(!s.ok)throw new Error(s.statusText);return await s.json()}function p(i){return i.hits.map(({webformatURL:r,largeImageURL:s,tags:o,likes:e,views:t,comments:a,downloads:l})=>`
         <li class="search-item">
             <a class="search-link" href="${s}">
-                <img src="${r}" alt="${o}" width="360" height="200">
+                <img src="${r}" alt="${o}">
             </a>
             <div class="search-item-text-wrap">
                 <div class="search-item-text">
