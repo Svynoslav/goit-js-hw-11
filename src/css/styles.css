@@ -1,25 +1,39 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.gallery{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.search-item{
+    max-width: 360px;
+    border: 1px solid #808080;
+}
+
+.search-item-text-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.search-item-text h2 {
+    font-size: 12px;
+}
+.search-item-text p {
+    font-size: 12px;
 }
