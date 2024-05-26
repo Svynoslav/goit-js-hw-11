@@ -1,6 +1,4 @@
 'use strict';
-// * У файлі pixabay-api.js зберігай функції для HTTP-запитів.
-
 
 async function fetchData(url, params) {
     const response = await fetch(`${url}?${params}`)

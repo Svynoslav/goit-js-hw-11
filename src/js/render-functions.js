@@ -1,11 +1,10 @@
 'use strict';
-// * У файлі render-functions.js створи функції для відображення елементів інтерфейсу.
 
 function createMarkup(data) {
     return data.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `
         <li class="search-item">
             <a class="search-link" href="${largeImageURL}">
-                <img src="${webformatURL}" alt="${tags}" width="360" height="200">
+                <img src="${webformatURL}" alt="${tags}">
             </a>
             <div class="search-item-text-wrap">
                 <div class="search-item-text">
